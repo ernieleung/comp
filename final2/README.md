@@ -11,7 +11,7 @@ MQGram is a social network prototype where users can manage contacts and posts w
 - Display all posts with nested comments
 ==========
 UML Diagram
-==========
+------
 [Client | +main(String[]): void]
 [PostW | -postId: int; -postText: String; -mediaLink: String; -commentList: ArrayList<Comment> | +PostW(postText: String, mediaLink: String); +addComment(Comment): void; +getPostId(): int; +getPostText(): String; +getMediaLink(): String; +getComments(): ArrayList<Comment>; +toString(): String]
 [Comment | -commentId: int; -author: String; -commentText: String | +Comment(author: String, text: String); +getCommentId(): int; +getAuthor(): String; +getCommentText(): String; +toString(): String]
